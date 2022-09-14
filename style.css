@@ -1,0 +1,102 @@
+@import url('https://fonts.google.com/specimen/Poppins?query=popp&preview.size=17');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    background-image: url(./assets/back.jpg);
+    background-blend-mode: darken;
+    background-color: rgb(135, 135, 135);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.banner{
+    display: flex;
+    justify-content: space-between  ;
+}
+.logo{
+    margin: auto 1rem;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: 600;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 2rem;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    background-color: #fff;
+    transition: 0.5s ease;
+
+}
+
+nav ul li a:hover:after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background-color: #fff;
+}
+span{
+    color: #169f91;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.content h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 800;
+}
+.content p{
+    margin: 0.5rem;
+    color: #fff;
+    font-size: 15px;
+}
+button{
+    width: 200px;
+    margin: 1.2rem 1.5rem;
+    padding: 0.8rem 1rem;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: inset 0 0 0 #169f91;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: inset 200px 0 0 #169f91 ;
+}
